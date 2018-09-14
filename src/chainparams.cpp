@@ -57,7 +57,7 @@ static void convertSeed6(std::vector<CAddress> &vSeedsOut, const SeedSpec6 *data
 static Checkpoints::MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
         //(0, uint256("0x000002b741bab69832a04d07f9aae1db7a6243c950cd2ba2ef2adf14d2b10949"))
-        (0, uint256("0000061fc41ce2bada99a90681903b1dc939bedf103c53fdc9ed38457022ac52"))        
+        (0, uint256("000007d1c0c2dbc8c5b0dea48347863fc62aec25ef97eeffffd62fe33189f3c0"))        
         ;
 
 static const Checkpoints::CCheckpointData data = {
@@ -132,7 +132,7 @@ public:
          *   vMerkleTree: e0028e
          */
 
-        const char* pszTimestamp = "main playt 1536293546";
+        const char* pszTimestamp = "main playt 1536905745";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -151,9 +151,9 @@ public:
         //genesis.nBits    = 0x1e0ffff0;
         //genesis.nNonce   = 124737539;
         //genesis.nTime    = 1526289408;
-        genesis.nTime    = 1536293546;
+        genesis.nTime    = 1536905745;
         genesis.nBits    = 0x1e0ffff0;        
-        genesis.nNonce   = 784801;
+        genesis.nNonce   = 504514;
 
 
         //hashGenesisBlock = genesis.GetHash();
@@ -161,7 +161,7 @@ public:
         ///*
         //printf("main net \n");
         hashGenesisBlock = uint256("0x01");
-        if (false && genesis.GetHash() != hashGenesisBlock)
+        if (true && genesis.GetHash() != hashGenesisBlock)
         {
             printf("recalculating params for mainnet.\n");
             printf("old mainnet genesis nonce: %d\n", genesis.nNonce);
@@ -178,8 +178,8 @@ public:
         //*/
 
         hashGenesisBlock = genesis.GetHash();        
-        assert(hashGenesisBlock == uint256("0000061fc41ce2bada99a90681903b1dc939bedf103c53fdc9ed38457022ac52"));
-        assert(genesis.hashMerkleRoot == uint256("176ba41d7748a32ccac3baa328f8ccf131ba8a16e625de2819279aa5f17faa8b"));
+        assert(hashGenesisBlock == uint256("000007d1c0c2dbc8c5b0dea48347863fc62aec25ef97eeffffd62fe33189f3c0"));
+        assert(genesis.hashMerkleRoot == uint256("a0e67e66ddb0a5f861daa417f58ee8b2703b0e830cacba41bce80f6fac776a9c"));
         
         //vSeeds.push_back(CDNSSeedData("220.85.13.236", "220.85.13.236"));
         //vSeeds.push_back(CDNSSeedData("192.168.0.44", "192.168.0.44"));
@@ -229,7 +229,7 @@ class CTestNetParams : public CMainParams {
 public:
     CTestNetParams() {
         networkID = CBaseChainParams::TESTNET;
-        strNetworkID = "test playt 1536046254";
+        strNetworkID = "test playt 1536905909";
         pchMessageStart[0] = 0xd1;
         pchMessageStart[1] = 0xb2;
         pchMessageStart[2] = 0xa4;
@@ -251,14 +251,14 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         //genesis.nTime = 1526289408;
-        genesis.nTime    = 1536046254;
+        genesis.nTime    = 1536905909;
         //genesis.nBits = 0x1e0ffff0;
         //genesis.nNonce = 124737539;
         genesis.nNonce = 1796618;
 
-        /*
+        ///*
         printf("test net \n");
-        if (genesis.GetHash() != hashGenesisBlock)
+        if (true && genesis.GetHash() != hashGenesisBlock)
         {
             printf("recalculating params for mainnet.\n");
             printf("old mainnet genesis nonce: %d\n", genesis.nNonce);
@@ -343,9 +343,9 @@ public:
         //genesis.nNonce = 124737539;
         genesis.nNonce = 1;
 
-        /*
+        ///*
         printf("reg test net\n");
-        if (genesis.GetHash() != hashGenesisBlock)
+        if (true && genesis.GetHash() != hashGenesisBlock)
         {
             printf("recalculating params for mainnet.\n");
             printf("old mainnet genesis nonce: %d\n", genesis.nNonce);
