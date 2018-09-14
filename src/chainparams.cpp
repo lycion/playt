@@ -158,11 +158,11 @@ public:
 
         //hashGenesisBlock = genesis.GetHash();
 
-        ///*
-        //printf("main net \n");
+        ///*        
         hashGenesisBlock = uint256("0x01");
-        if (true && genesis.GetHash() != hashGenesisBlock)
+        if (false && genesis.GetHash() != hashGenesisBlock)
         {
+            printf("main net \n");
             printf("recalculating params for mainnet.\n");
             printf("old mainnet genesis nonce: %d\n", genesis.nNonce);
             printf("old mainnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
@@ -254,12 +254,12 @@ public:
         genesis.nTime    = 1536905909;
         //genesis.nBits = 0x1e0ffff0;
         //genesis.nNonce = 124737539;
-        genesis.nNonce = 1796618;
+        genesis.nNonce = 334874;
 
-        ///*
-        printf("test net \n");
-        if (true && genesis.GetHash() != hashGenesisBlock)
+        ///*        
+        if (false && genesis.GetHash() != hashGenesisBlock)
         {
+            printf("test net \n");
             printf("recalculating params for mainnet.\n");
             printf("old mainnet genesis nonce: %d\n", genesis.nNonce);
             printf("old mainnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
@@ -275,7 +275,7 @@ public:
         //*/
 
         hashGenesisBlock = genesis.GetHash();        
-        assert(hashGenesisBlock == uint256("00000f2671e031849f885b1d59a3c1c71732a93786585639cd117209c67a4e73"));        
+        assert(hashGenesisBlock == uint256("000009124dd7b70067c7d76f7393101708b0e54c6e901bf388a1be7cf1deaf5a"));        
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -338,15 +338,15 @@ public:
         nTargetSpacing = 10 * 60; // PlayT: 10 minutes");
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         //genesis.nTime = 1526289408;
-        genesis.nTime    = 1536046792;
+        genesis.nTime    = 1536906297;
         genesis.nBits = 0x1e0ffff0;
         //genesis.nNonce = 124737539;
         genesis.nNonce = 1;
 
-        ///*
-        printf("reg test net\n");
-        if (true && genesis.GetHash() != hashGenesisBlock)
+        ///*        
+        if (false && genesis.GetHash() != hashGenesisBlock)
         {
+            printf("reg test net\n");
             printf("recalculating params for mainnet.\n");
             printf("old mainnet genesis nonce: %d\n", genesis.nNonce);
             printf("old mainnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
@@ -363,7 +363,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 19994;        
-        assert(hashGenesisBlock == uint256("0dd2fb4cde845b8d9e99a5e55e280c42d337c989d4d259bc98b53d48b5656639"));
+        assert(hashGenesisBlock == uint256("3fa1ea7144a94a3e5ebcad17a44692dac829ff7afd9b5a5765039875937e03c5"));
         
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
