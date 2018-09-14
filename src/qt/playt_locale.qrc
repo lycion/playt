@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/playt_bg.qm</file>
+        <file alias="de">locale/playt_de.qm</file>
+        <file alias="en">locale/playt_en.qm</file>
+        <file alias="es">locale/playt_es.qm</file>
+        <file alias="fi">locale/playt_fi.qm</file>
+        <file alias="fr">locale/playt_fr.qm</file>
+        <file alias="it">locale/playt_it.qm</file>
+        <file alias="ja">locale/playt_ja.qm</file>
+        <file alias="pl">locale/playt_pl.qm</file>
+        <file alias="pt">locale/playt_pt.qm</file>
+        <file alias="ru">locale/playt_ru.qm</file>
+        <file alias="sk">locale/playt_sk.qm</file>
+        <file alias="sv">locale/playt_sv.qm</file>
+        <file alias="vi">locale/playt_vi.qm</file>
+        <file alias="zh_CN">locale/playt_zh_CN.qm</file>
+        <file alias="zh_TW">locale/playt_zh_TW.qm</file>
+    </qresource>
+</RCC>

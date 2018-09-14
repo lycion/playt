@@ -1,0 +1,11 @@
+playtd: chainparams.cpp:275: CTestNetParams::CTestNetParams(): Assertion `hashGenesisBlock == uint256("000002b741bab69832a04d07f9aae1db7a6243c950cd2ba2ef2adf14d2b10949")' failed.
+playtd: chainparams.cpp:275: CTestNetParams::CTestNetParams(): Assertion `hashGenesisBlock == uint256("000002b741bab69832a04d07f9aae1db7a6243c950cd2ba2ef2adf14d2b10949")' failed.
+playtd: chainparams.cpp:275: CTestNetParams::CTestNetParams(): Assertion `hashGenesisBlock == uint256("000002b741bab69832a04d07f9aae1db7a6243c950cd2ba2ef2adf14d2b10949")' failed.
+playtd: chainparams.cpp:275: CTestNetParams::CTestNetParams(): Assertion `hashGenesisBlock == uint256("000002b741bab69832a04d07f9aae1db7a6243c950cd2ba2ef2adf14d2b10949")' failed.
+playtd: chainparams.cpp:275: CTestNetParams::CTestNetParams(): Assertion `hashGenesisBlock == uint256("000002b741bab69832a04d07f9aae1db7a6243c950cd2ba2ef2adf14d2b10949")' failed.
+playtd: chainparams.cpp:275: CTestNetParams::CTestNetParams(): Assertion `hashGenesisBlock == uint256("000002b741bab69832a04d07f9aae1db7a6243c950cd2ba2ef2adf14d2b10949")' failed.
+PlayT server starting
+PlayT server starting
+PlayT server starting
+Error: Cannot obtain a lock on data directory /home/jj/.playt. PlayT Core is probably already running.
+PlayT server starting

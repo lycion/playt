@@ -1,0 +1,27 @@
+# /etc/conf.d/playtd: config file for /etc/init.d/playtd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/playt/playt.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/playtd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/playtd.pid"
+
+# Where to write playtd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/playtd"
+
+# User and group to own playtd process
+#BITCOIND_USER="playt"
+#BITCOIND_GROUP="playt"
+
+# Path to playtd executable
+#BITCOIND_BIN="/usr/bin/playtd"
+
+# Nice value to run playtd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS="-disablewallet"
+

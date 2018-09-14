@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PlayT
+Comment=PlayT P2P Cryptocurrency
+Comment[fr]=PlayT, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=PlayT, eşten eşe kriptografik sanal para birimi
+Exec=playt-qt %u
+Terminal=false
+Type=Application
+Icon=playt128
+MimeType=x-scheme-handler/playt;
+Categories=Office;Finance;
